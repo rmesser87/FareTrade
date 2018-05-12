@@ -16,14 +16,10 @@
   "bugs": {
     "url": "https://github.com/rmesser87/FareTrade/issues"
   },
-<<<<<<< HEAD
   "homepage": "https://github.com/rmesser87/FareTrade#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "mysql": "^2.15.0"
   }
-=======
-  "homepage": "https://github.com/rmesser87/FareTrade#readme"
->>>>>>> master
 }
