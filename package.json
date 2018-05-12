@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/rmesser87/FareTrade/issues"
   },
-  "homepage": "https://github.com/rmesser87/FareTrade#readme"
+  "homepage": "https://github.com/rmesser87/FareTrade#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
 }
