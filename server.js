@@ -19,6 +19,7 @@ app.use(bodyParser.json());
 app.use(express.static("app/public"));
 
 // Routes
+//Pending change based on file content
 // =============================================================
 require("./routes/routes.js")(app);
 
