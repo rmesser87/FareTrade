@@ -2,6 +2,7 @@
 // =============================================================
 var express = require("express");
 var bodyParser = require("body-parser");
+var exphbs = require("express-handlebars");
 
 // Sets up the Express App
 // =============================================================
@@ -14,6 +15,11 @@ var PORT = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
 app.use(bodyParser.json());
+
+// Set Handebars as the default templating engine.
+// =============================================================
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 // Static directory to be served
 app.use(express.static("app/public"));
