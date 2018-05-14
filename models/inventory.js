@@ -25,5 +25,10 @@ module.exports = function(sequelize, DataTypes) {
         }
     });
 
+    Inventory.associate = function (models) {
+        Inventory.belongsTo(models.User, {
+            foreignKey: 'User_id'});
+    };
+
     return Inventory; 
 };

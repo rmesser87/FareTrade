@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
     var Address = sequelize.define("Address", {
         street: {
             type: DataTypes.STRING,
@@ -11,11 +11,18 @@ module.exports = function(sequelize, DataTypes) {
         state: {
             type: DataTypes.STRING,
             allowNull: true
-        }, 
+        },
         zip: {
             type: DataTypes.INTEGER,
             allowNull: true
         }
     });
-    return Address; 
+
+    Address.associate = function (models) {
+        Address.hasOne(models.User, {
+            onDelete: "NO ACTION"
+        });
+    };
+
+    return Address;
 };
