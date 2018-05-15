@@ -41,13 +41,6 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: true
         },
-<<<<<<< HEAD:app/models/user.js
-        // createdAt: {
-        //     type: DataTypes.DATETIME,
-        //     allowNull: false
-        // },
-=======
->>>>>>> master:models/user.js
         Address_id: {
             type: DataTypes.INTEGER,
             allowNull: true
