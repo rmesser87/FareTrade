@@ -26,10 +26,6 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: true
         },
-        createdAt: {
-            type: DataTypes.DATETIME,
-            allowNull: false
-        },
         Address_id: {
             type: DataTypes.INTEGER,
             allowNull: true
