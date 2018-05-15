@@ -15,7 +15,22 @@ module.exports = function (sequelize, DataTypes) {
                 len: [8, 12]
             }
         },
-        name: {
+        firstname: {
+            type: DataTypes.STRING,
+            notEmpty: true
+        },
+ 
+        lastname: {
+            type: DataTypes.STRING,
+            notEmpty: true
+        },
+        email: {
+            type: DataTypes.STRING,
+            validate: {
+                isEmail: true
+            }
+        },
+        alias: {
             type: DataTypes.STRING,
             allowNull: true,
             validate: {
