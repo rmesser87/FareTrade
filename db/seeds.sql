@@ -30,15 +30,15 @@ insert into Address (street, city, state, zip, addressid) values ('13787 County 
 
 insert into Address (street, city, state, zip, addressid) values ('2728 Mansfield St', 'Houston', 'TX','77091');
 
-insert into Inventory (User_id, category, product, quantity, price, unit) values (1, 'vegetable', 'eggplant', '100', '3.50', 'pound');
+insert into Inventory (User_id, category, product, quantity, price, unit) values (1, 'vegetable', 'eggplant', '100', '3.50', 'lb');
 
-insert into Inventory (User_id, category, product, quantity, price, unit) values (1, 'vegetable', 'tomato', '500', '0.90', 'pound');
+insert into Inventory (User_id, category, product, quantity, price, unit) values (1, 'vegetable', 'tomato', '500', '0.90', 'lb');
 
-insert into Inventory (User_id, category, product, quantity, price, unit) values (1, 'vegetable', 'cabbage', '800', '0.38', 'pound');
+insert into Inventory (User_id, category, product, quantity, price, unit) values (1, 'vegetable', 'cabbage', '800', '0.38', 'lb');
 
 insert into Inventory (User_id, category, product, quantity, price, unit) values (2, 'fruit', 'cantaloupe', '110', '1.50', 'each');
 
-insert into Inventory (User_id, category, product, quantity, price, unit) values (2, 'fruit', 'apple', '800', '1.20', 'pound');
+insert into Inventory (User_id, category, product, quantity, price, unit) values (2, 'fruit', 'apple', '800', '1.20', 'lb');
 
 insert into Inventory (User_id, category, product, quantity, price, unit) values (2, 'fruit', 'blueberries', '1000', '5.00', 'quart');
 
@@ -48,13 +48,13 @@ insert into Inventory (User_id, category, product, quantity, price, unit) values
 
 insert into Inventory (User_id, category, product, quantity, price, unit) values (3, 'herb', 'parsley', '1000', '0.50', 'each');
 
-insert into Inventory (User_id, category, product, quantity, price, unit) values (4, 'vegetable', 'potato', '500', '0.40', 'pound');
+insert into Inventory (User_id, category, product, quantity, price, unit) values (4, 'vegetable', 'potato', '500', '0.40', 'lb');
 
-insert into Inventory (User_id, category, product, quantity, price, unit) values (4, 'vegetable', 'carrot', '600', '0.90', 'pound');
+insert into Inventory (User_id, category, product, quantity, price, unit) values (4, 'vegetable', 'carrot', '600', '0.90', 'lb');
 
-insert into Inventory (User_id, category, product, quantity, price, unit) values (4, 'vegetable', 'beets', '600', '1.50', 'pound');
+insert into Inventory (User_id, category, product, quantity, price, unit) values (4, 'vegetable', 'beets', '600', '1.50', 'lb');
 
-insert into Inventory (User_id, category, product, quantity, price, unit) values (5, 'fruit', 'grapefruit', '1000', '1.20', 'pound');
+insert into Inventory (User_id, category, product, quantity, price, unit) values (5, 'fruit', 'grapefruit', '1000', '1.20', 'lb');
 
 insert into Inventory (User_id, category, product, quantity, price, unit) values (5, 'vegetable', 'romaine lettuce', '1000', '1.48', 'each');
 
@@ -64,4 +64,4 @@ insert into Inventory (User_id, category, product, quantity, price, unit) values
 
 insert into Inventory (User_id, category, product, quantity, price, unit) values (6, 'fruit', 'honeydew melon', '800', '1.80', 'each');
 
-insert into Inventory (User_id, category, product, quantity, price, unit) values (6, 'vegetable', 'sweet potato', '1500', '0.90', 'pound');
+insert into Inventory (User_id, category, product, quantity, price, unit) values (6, 'vegetable', 'sweet potato', '1500', '0.90', 'lb');
