@@ -1,37 +1,32 @@
-// Dependencies
-// =============================================================
-var express = require("express");
-var bodyParser = require("body-parser");
-var exphbs = require("express-handlebars");
-
-
-// Sets up the Express App
-// =============================================================
+var express = require('express');
 var app = express();
-var PORT = process.env.PORT || 8080;
+var passport = require('passport')
+var session = require('express-session')
+var bodyParser = require('body-parser')
 
-// Sets up the Express app to handle data parsing
-
-// parse application/x-www-form-urlencoded
+//For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
-// parse application/json
 app.use(bodyParser.json());
 
-// Set Handebars as the default templating engine.
-// =============================================================
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+// For Passport
+ 
+app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+ 
+app.use(passport.initialize());
+ 
+app.use(passport.session()); // persistent login sessions
 
-// Static directory to be served
-// app.use(express.static("app/public"));
+app.get('/', function (req, res) {
 
-// Routes
-//Pending change based on file content
-// =============================================================
-// require("./routes/routes.js")(app);
+  res.send('Welcome to Passport with Sequelize');
 
-// Starts the server to begin listening
-// =============================================================
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+});
+
+
+app.listen(5000, function (err) {
+
+  if (!err)
+    console.log("Site is live");
+  else console.log(err)
+
 });
