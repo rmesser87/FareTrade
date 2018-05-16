@@ -1,7 +1,7 @@
-module.exports = function(sequelize, Sequelize) {
- 
+module.exports = function (sequelize, Sequelize) {
+
     var User = sequelize.define('user', {
- 
+
         id: {
             autoIncrement: true,
             primaryKey: true,
@@ -38,7 +38,14 @@ module.exports = function(sequelize, Sequelize) {
         status: {
             type: Sequelize.ENUM('active', 'inactive'),
             defaultValue: 'active'
-        }
+        },
+    }, {
+        underscored: true
     });
+
     return User;
+
+    User.belongsTo(Address);
+    User.hasMany(Inventory);
+
 };

@@ -1,9 +1,5 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
     var Inventory = sequelize.define("Inventory", {
-        User_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false
-        },
         category: {
             type: DataTypes.STRING,
             allowNull: false
@@ -15,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
         quantity: {
             type: DataTypes.INTEGER,
             allowNull: false
-        }, 
+        },
         price: {
             type: DataTypes.FLOAT
         },
@@ -23,12 +19,10 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         }
+    }, {
+        underscored: true
     });
 
-    // Inventory.associate = function (models) {
-    //     Inventory.belongsTo(models.User, {
-    //         foreignKey: 'User_id'});
-    // };
+    return Inventory;
 
-    return Inventory; 
 };
