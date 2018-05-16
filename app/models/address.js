@@ -18,11 +18,11 @@ module.exports = function (sequelize, DataTypes) {
         }
     });
 
-    Address.associate = function (models) {
-        Address.hasOne(models.User, {
-            onDelete: "NO ACTION"
-        });
-    };
+    // Address.associate = function (models) {
+    //     Address.hasOne(models.User, {
+    //         onDelete: "NO ACTION"
+    //     });
+    // };
 
     return Address;
 };

@@ -1,62 +1,56 @@
-module.exports = function (sequelize, DataTypes) {
-    var User = sequelize.define("User", {
-        username: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                len: [6, 16]
-            }
+module.exports = function(sequelize, Sequelize) {
+ 
+    var User = sequelize.define('user', {
+ 
+        id: {
+            autoIncrement: true,
+            primaryKey: true,
+            type: Sequelize.INTEGER
         },
-        //discuss adding a "Farm name or business name; an alternate to username ie un-rmesse1 page-Ginger Farms"
-        password: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                len: [8, 12]
-            }
-        },
+ 
         firstname: {
-            type: DataTypes.STRING,
+            type: Sequelize.STRING,
             notEmpty: true
         },
  
         lastname: {
-            type: DataTypes.STRING,
+            type: Sequelize.STRING,
             notEmpty: true
         },
+ 
+        username: {
+            type: Sequelize.TEXT
+        },
+ 
+        about: {
+            type: Sequelize.TEXT
+        },
+ 
         email: {
-            type: DataTypes.STRING,
+            type: Sequelize.STRING,
             validate: {
                 isEmail: true
             }
         },
-        alias: {
-            type: DataTypes.STRING,
-            allowNull: true,
-            validate: {
-                len: [0, 25]
-            }
+ 
+        password: {
+            type: Sequelize.STRING,
+            allowNull: false
         },
-        about: {
-            type: DataTypes.STRING,
+ 
+        last_login: {
+            type: Sequelize.DATE,
             allowNull: true
         },
-        Address_id: {
-            type: DataTypes.INTEGER,
-            allowNull: true
+ 
+        status: {
+            type: Sequelize.ENUM('active', 'inactive'),
+            defaultValue: 'active'
         }
+ 
+ 
     });
-
-    User.associate = function (models) {
-        User.hasMany(models.Inventory, {
-            onDelete: "cascade"
-        });
-    };
-
-    User.associate = function (models) {
-        User.belongsTo(models.Address, {
-            foreignKey: 'Address_id'});
-    };
-
+ 
     return User;
-};
+ 
+}
