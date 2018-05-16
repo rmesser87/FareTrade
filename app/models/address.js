@@ -16,13 +16,10 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             allowNull: true
         }
+    }, {
+        underscored: true
     });
 
-    // Address.associate = function (models) {
-    //     Address.hasOne(models.User, {
-    //         onDelete: "NO ACTION"
-    //     });
-    // };
-
     return Address;
+
 };
