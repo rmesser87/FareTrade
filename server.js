@@ -1,3 +1,4 @@
+//Dependents
 var express = require('express');
 var app = express();
 var passport = require('passport');
@@ -56,7 +57,7 @@ require('./app/config/passport/passport.js')(passport, models.user);
  
 models.sequelize.sync().then(function() {
  
-    console.log('Nice! Database looks fine');
+    console.log('Database is working');
  
  
 }).catch(function(err) {
