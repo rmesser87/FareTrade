@@ -43,9 +43,22 @@ module.exports = function (sequelize, Sequelize) {
         underscored: true
     });
 
-    return User;
+    User.associate = function (models) {
+        // Associating User with Inventory
+        // When a User is deleted, also delete any associated INventory
+        User.hasMany(models.Inventory, {
+            onDelete: "cascade"
+        });
+    };
 
-    User.belongsTo(Address);
-    User.hasMany(Inventory);
+    User.associate = function (models) {
+        // Associating User with Address
+        // When a User is deleted, also delete any associated Address
+        User.belongsTo(models.Address, {
+            onDelete: "cascade"
+        });
+    };
+
+    return User;
 
 };

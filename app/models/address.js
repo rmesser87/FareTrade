@@ -20,6 +20,11 @@ module.exports = function (sequelize, DataTypes) {
         underscored: true
     });
 
+    Address.associate = function (models) {
+        // Associating Address with User
+        Address.hasOne(models.user);
+    };
+
     return Address;
 
 };

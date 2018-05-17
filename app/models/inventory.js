@@ -23,6 +23,16 @@ module.exports = function (sequelize, DataTypes) {
         underscored: true
     });
 
+    Inventory.associate = function (models) {
+        // We're saying that Inventory should belong to a User
+        // Inventory can't be created without a User due to the foreign key constraint
+        Inventory.belongsTo(models.user, {
+            foreignKey: {
+                allowNull: false
+            }
+        });
+    };
+
     return Inventory;
 
 };
