@@ -1,3 +1,4 @@
+//Dependents
 var express = require('express');
 var app = express();
 var passport = require('passport');
@@ -51,16 +52,13 @@ var authRoute = require('./app/routes/auth.js')(app, passport);
 
 require('./app/config/passport/passport.js')(passport, models.user);
 
-
-//Sync Database
 //true means that it will drop our database each time this code is run
 //make false before deployment
-
 models.sequelize.sync({
     force: true
 }).then(function () {
 
-    console.log('Nice! Database looks fine');
+    console.log('Database is working');
 
 
 }).catch(function (err) {
