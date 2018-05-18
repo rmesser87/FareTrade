@@ -21,13 +21,19 @@ module.exports = function(app) {
   });
   
   // signup route loads to signup.html
+  // consider deleting this route
   app.get("/signup", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
   // search route loads search.html
+  //consider deleting this route
   app.get("/search", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/search.html"));
+  });
+  // profile route loads profile.html
+  app.get("/profile", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
 
   // product view route loads product-view.html
