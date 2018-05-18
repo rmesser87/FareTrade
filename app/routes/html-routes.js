@@ -21,15 +21,22 @@ module.exports = function(app) {
   });
   
   // signup route loads to signup.html
+  //Consider deleting this path
   app.get("/signup", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
   // search route loads search.html
+  //Consider deleting this path
   app.get("/search", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/search.html"));
   });
-
+  
+ // profile route loads profile.html
+  app.get("/profile", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/profile.html"));
+  });
+  
   // product view route loads product-view.html
   app.get("/product_view", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/product-view.html"));
