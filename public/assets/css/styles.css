@@ -1,7 +1,11 @@
 div.jumbotron.jumbotron-fluid{
-    background-color: aqua;
+    background-image: url('/assets/images/stock1.jpg')
 }
 #test{
     color: red;
     background-color: blue;
+}
+
+.display-4 {
+    color: yellow;
 }

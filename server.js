@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 var env = require('dotenv').load();
 var exphbs = require('express-handlebars');
 
+app.use(express.static("public"));
+
 
 //For BodyParser
 app.use(bodyParser.urlencoded({
@@ -26,11 +28,11 @@ app.use(passport.session()); // persistent login sessions
 
 
 //For Handlebars
-app.set('views', './views');
+app.set('views', './app/views');
 app.engine('hbs', exphbs({
     extname: '.hbs',
-    layoutsDir: './views/layouts',
-    partialsDir:'./views/partials',
+    layoutsDir: './app/views/layouts',
+    partialsDir:'./app/views/partials',
     defaultLayout: 'main'
 }));
 app.set('view engine', '.hbs');
