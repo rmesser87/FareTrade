@@ -12,4 +12,7 @@ $(document).ready(function () {
     $("#signupform").on("click", function (event) {
         event.preventDefault();
     });
+    $("#signupform").on("click", function (event) {
+        event.preventDefault();
+    });
 });
