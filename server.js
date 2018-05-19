@@ -57,6 +57,15 @@ require('./app/config/passport/passport.js')(passport, models.user);
 models.sequelize.sync({
     force: true
 }).then(function () {
+    app.listen(5000, function (err) {
+
+        if (!err)
+
+            console.log("Site is live");
+
+        else console.log(err);
+
+    });
 
     console.log('Database is working');
 
@@ -68,12 +77,12 @@ models.sequelize.sync({
 });
 
 
-app.listen(5000, function (err) {
+// app.listen(5000, function (err) {
 
-    if (!err)
+//     if (!err)
 
-        console.log("Site is live");
+//         console.log("Site is live");
 
-    else console.log(err);
+//     else console.log(err);
 
-});
+// });
