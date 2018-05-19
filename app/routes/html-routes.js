@@ -12,6 +12,7 @@ module.exports = function (app) {
 
   // index route loads index.html which is the loaded main url page
   app.get("/", function (req, res) {
+    
     res.render('index');
   });
   //aboutus route loads aboutus.hbs
@@ -47,10 +48,12 @@ module.exports = function (app) {
   });
   // signin route loads signin.hbs
   app.get("/signin", function (req, res) {
+    event.preventDefault();
     res.render('signin');
   });
   // signup route loads to signup.hbs
   app.get("/signup", function (req, res) {
+    
     res.render('signup');
   });
 };
