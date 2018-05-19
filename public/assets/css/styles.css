@@ -1,8 +1,7 @@
-body {
-    background: red;
+div.jumbotron.jumbotron-fluid{
+    background-color: aqua;
 }
-
-#test {
+#test{
     color: red;
     background-color: blue;
 }
