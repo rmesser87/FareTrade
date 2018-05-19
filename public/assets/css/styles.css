@@ -9,3 +9,11 @@ div.jumbotron.jumbotron-fluid{
 .display-4 {
     color: yellow;
 }
+
+.lead {
+    color: yellow;
+}
+
+.navbar-brand {
+    background-image: url('assets/images/FTLogo-4.png');
+}
