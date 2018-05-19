@@ -9,10 +9,10 @@ $(document).ready(function () {
         event.preventDefault();
         location.href = ('/signin');
     });
-    $("#signupform").on("click", function (event) {
-        event.preventDefault();
-    });
-    $("#signupform").on("click", function (event) {
-        event.preventDefault();
-    });
+    // $("#signupform").on("click", function (event) {
+    //     event.preventDefault();
+    // });
+    // $("#signupform").on("click", function (event) {
+    //     event.preventDefault();
+    // });
 });
