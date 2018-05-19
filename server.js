@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 var env = require('dotenv').load();
 var exphbs = require('express-handlebars');
 
+app.use(express.static("public"));
+
 
 //For BodyParser
 app.use(bodyParser.urlencoded({
