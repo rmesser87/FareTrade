@@ -12,18 +12,18 @@ module.exports = function(app) {
 
   // index route loads index.html which is the loaded main url page
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    res.render('index');
   });
 
   // signin route loads signin.html
   app.get("/signin", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/signin.html"));
+    res.sendFile(path.join(__dirname, "../public/signin.hbs"));
   });
   
   // signup route loads to signup.html
   //Consider deleting this path
   app.get("/signup", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/signup.html"));
+    res.sendFile(path.join(__dirname, "../public/signup.hbs"));
   });
 
   // search route loads search.html
