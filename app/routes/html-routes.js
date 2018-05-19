@@ -6,44 +6,51 @@ var path = require("path");
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+module.exports = function (app) {
 
-  // Each of the below routes just handles the HTML page that the user gets sent to.
+  // Each of the below routes just handles the handlebard page that the user gets sent to.
 
   // index route loads index.html which is the loaded main url page
-  app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+  app.get("/", function (req, res) {
+    res.render('index');
   });
-
-  // signin route loads signin.html
-  app.get("/signin", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/signin.html"));
+  //aboutus route loads aboutus.hbs
+  app.get("/aboutus", function (req, res) {
+    res.render('aboutus');
   });
-  
-  // signup route loads to signup.html
-  //Consider deleting this path
-  app.get("/signup", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/signup.html"));
+  //cart route loads cart.hbs
+  app.get("/cart", function (req, res) {
+    res.render('cart');
   });
-
-  // search route loads search.html
-  //Consider deleting this path
-  app.get("/search", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/search.html"));
+  //contactus route loads contactus.hbs
+  app.get("/contactus", function (req, res) {
+    res.render('contactus');
   });
-  
- // profile route loads profile.html
-  app.get("/profile", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/profile.html"));
+  //dashboard route loads dashboard.hbs
+  app.get("/dashboard", function (req, res) {
+    res.render('dashboard');
   });
-  
-  // product view route loads product-view.html
-  app.get("/product_view", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/product-view.html"));
+  //history route loads history.hbs
+  app.get("/history", function (req, res) {
+    res.render('history');
   });
-  // order placed route loads order-placed.html
-  app.get("/order_placed", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/order-placed.html"));
+  app.get("/recipes", function (req, res) {
+    res.render('recipes');
   });
-
+  //resources route loads resources.hbs
+  app.get("/resources", function (req, res) {
+    res.render('resources');
+  });
+  //shop route loads shop.hbs
+  app.get("/shop", function (req, res) {
+    res.render('shop');
+  });
+  // signin route loads signin.hbs
+  app.get("/signin", function (req, res) {
+    res.render('signin');
+  });
+  // signup route loads to signup.hbs
+  app.get("/signup", function (req, res) {
+    res.render('signup');
+  });
 };
