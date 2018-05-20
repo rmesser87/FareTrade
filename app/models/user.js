@@ -50,7 +50,7 @@ module.exports = function (sequelize, Sequelize) {
             onDelete: "cascade"
         }),
         User.belongsTo(models.Address, {
-            onDelete: "ON DELETE SET NULL ON UPDATE CASCADE"
+            onDelete: "cascade"
         });
     };
 
