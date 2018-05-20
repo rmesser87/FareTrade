@@ -1,3 +1,5 @@
+
+{{!-- Just a placeholder for signup form while I figure out what's going on --}}
 {{> nav/navbar}}
     <div class="container">
         <h1 class="display-4">Sign Up</h1>
@@ -32,3 +34,23 @@
         </div>
     </div>
 </div>
+
+{{!-- Just a placeholder for signin form while I figure out what's going on --}}
+
+ {{> nav/navbar}}
+<div class="jumbotron jumbotron-fluid" id="signin">
+  <div class="container">
+    <h1 class="display-4">Sign In</h1>
+    <br>
+    <br>
+    <form id="signinform" name="signin" method="post" action="signin">
+      <label for="email">Email Address</label>
+      <input class="text" name="email" type="text" />
+      <label for="password">Password</label>
+      <input name="password" type="password" />
+      <input class="signinbtn" type="submit" value="Sign In" />
+    </form>
+  </div>
+</div>
+
+
