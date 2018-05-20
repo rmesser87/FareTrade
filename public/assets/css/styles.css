@@ -1,11 +1,11 @@
 body {
     font-family: 'Merienda', cursive;
-    background-color: #A7E80C;
-    color: #FFFB00;
+    background-color: #ffffff;
+    color: #080808;
 }
 h1 {
     font-family: 'Kaushan Script', cursive;
-    color: #FFFB00;
+    color: #B35C42;
 }
 /* ************************************************************* */
 /* NavBar */
@@ -13,24 +13,57 @@ h1 {
     background-image: url('assets/images/FTLogo-4.png');
 }
 #navbarNavAltMarkup {
-    background-color: #A7E80C;
-    color: #FFFB00;
+    background-color: #49672b;
+    color: #ffffff;
 }
 .navbar-toggler-icon {
-    color: red;
+    color: #ffffff !important;
 }
 .navbar-toggler {
-    color: blue;
+    color: blue !important;
 }
 .collapse.navbar-collapse {
-    color: purple;
+    color: purple !important;
 }
 .nav-item.nav-link.active {
-    color: #FFFB00;
+    color: #B35C42 !important;
 }
 .nav-item.nav-link {
-    color: #FFFB00;
+    color: #ffffff !important;
 }
+a {
+    color: #ACF366 !important;
+}
+a:hover {
+    color: #ACF366 !important;
+}
+.navbar-toggler {
+    color: pink !important;
+}
+.navbar .navbar-expand-lg .navbar-light .bg-light {
+    color: #49672b !important;
+    background-color: #49672b !important;
+}
+.bg-light {
+    background-color: #49672b !important;
+}
+#logo {
+    height: 40px;
+    width: 40px;
+}
+
+/* ************************************************************* */
+/*Footer*/
+.footer {
+    background-color: #88B35D;
+    text-align: center;
+    font-size: 12px;
+}
+#logo2 {
+    height: 40px;
+    width: 120px;
+}
+
 /* ************************************************************* */
 /*HomePage*/
 #home {
@@ -44,9 +77,17 @@ h1 {
 
 .lead {
     font-size: 60px;
+    color: #B35C42;
 }
 .card-body {
-    background-color: #188425;
+    background-color: #49672b !important;
+    color: #B35C42;
+}
+#disclaimer {
+    font-size: 8px;
+    color: black;
+    text-align: left;
+    margin-bottom: 2px;
 }
 /* ************************************************************* */
 /*AboutUs*/
@@ -55,17 +96,21 @@ h1 {
     background-image: url('/assets/images/pexels-photo-216368.jpeg');
     background-size: cover;
 }
-#test{
-    color: red;
-    background-color: blue;
-}
 
+.indent {
+    text-indent: 22px;
+}
 /* ************************************************************* */
 /*History*/
 #history {
     text-align: center;
     background-image: url('/assets/images/pexels-photo-606540.jpeg');
     background-size: cover;
+}
+
+#logo3 {
+    height: 20px;
+    width: 60px;
 }
 
 /* ************************************************************* */
