@@ -1,19 +1,120 @@
-div.jumbotron.jumbotron-fluid{
-    background-image: url('/assets/images/stock1.jpg')
+body {
+    font-family: 'Merienda', cursive;
+    background-color: #A7E80C;
+    color: #FFFB00;
+}
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    color: #FFFB00;
+}
+/* ************************************************************* */
+/* NavBar */
+.navbar-brand {
+    background-image: url('assets/images/FTLogo-4.png');
+}
+#navbarNavAltMarkup {
+    background-color: #A7E80C;
+    color: #FFFB00;
+}
+.navbar-toggler-icon {
+    color: red;
+}
+.navbar-toggler {
+    color: blue;
+}
+.collapse.navbar-collapse {
+    color: purple;
+}
+.nav-item.nav-link.active {
+    color: #FFFB00;
+}
+.nav-item.nav-link {
+    color: #FFFB00;
+}
+/* ************************************************************* */
+/*HomePage*/
+#home {
+    text-align: center;
+    background-image: url('/assets/images/stock1.jpg');
+    background-size: cover;
+}
+.display-4 {
+    font-size: 100px;
+}
+
+.lead {
+    font-size: 60px;
+}
+/* ************************************************************* */
+/*AboutUs*/
+#aboutus {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-216368.jpeg');
+    background-size: cover;
 }
 #test{
     color: red;
     background-color: blue;
 }
 
-.display-4 {
-    color: yellow;
+/* ************************************************************* */
+/*History*/
+#history {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-606540.jpeg');
+    background-size: cover;
 }
 
-.lead {
-    color: yellow;
+/* ************************************************************* */
+/*Resources*/
+#resources {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-216368.jpeg');
+    background-size: cover;
 }
 
-.navbar-brand {
-    background-image: url('assets/images/FTLogo-4.png');
+/* ************************************************************* */
+/*Recipes*/
+#recipes {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-326281.jpeg');
+    background-size: cover;
+}
+
+/* ************************************************************* */
+/*ContactUs*/
+#contactus {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-326278.jpeg');
+    background-size: cover;
+}
+
+/* ************************************************************* */
+/*SignIn*/
+#signin {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-1070987.jpeg');
+    background-size: cover;
+}
+#signinform {
+    text-align: center;
+}
+.signinbtn {
+    color: #FFFB00;
+    background-color: #18BD25;
+}
+
+/* ************************************************************* */
+/*SignUp*/
+#signup {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-192312.jpeg');
+    background-size: cover;
+}
+.signupbtn {
+    color: #FFFB00;
+    background-color: #18BD25;
+}
+#signupform {
+    text-align: center;
 }
