@@ -22,9 +22,7 @@ module.exports = function (sequelize, DataTypes) {
 
     Address.associate = function (models) {
         // Associating Address with User
-        Address.hasOne(models.user, {
-            onDelete: "null"
-        });
+        Address.hasOne(models.user);
     };
 
     return Address;
