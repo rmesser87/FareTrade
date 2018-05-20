@@ -1,4 +1,4 @@
-use faretrade;
+use uwbfqcjrjwbkmy73;
 
 insert into addresses (street, city, state, zip, created_at, updated_at) values ('22619 Roberts Cemetery Rd', 'Hockley', 'TX','77447', '2018-05-16 11:00:00', '2018-05-16 11:00:00');
 
@@ -14,7 +14,7 @@ insert into addresses (street, city, state, zip, created_at, updated_at) values 
 
 insert into users (email, password, username, about, address_id, firstname, lastname, created_at, updated_at) values ('kpowers@gmail.com', 'password1', 'EastBound Farms','Always Fresh', 1,'Kenny', 'Powers', '2018-05-16 11:00:00', '2018-05-16 11:00:00');
 
-insert into users (email, password, username, about, address_id, firstname, lastname, created_at, updated_at) values ('glaforgegmail.com', 'password2', 'Holodeck Ranch','Best Fruits Around', 2,'Geordi', 'LaForge', '2018-05-16 11:00:00', '2018-05-16 11:00:00');
+insert into users (email, password, username, about, address_id, firstname, lastname, created_at, updated_at) values ('glaforge@gmail.com', 'password2', 'Holodeck Ranch','Best Fruits Around', 2,'Geordi', 'LaForge', '2018-05-16 11:00:00', '2018-05-16 11:00:00');
 
 insert into users (email, password, username, about, address_id, firstname, lastname, created_at, updated_at) values ('bcrushergmail.com', 'password3', 'Ginger Farms','Herbs Veggies and Fruits', 3,'Beverly', 'Crusher', '2018-05-16 11:00:00', '2018-05-16 11:00:00');
 

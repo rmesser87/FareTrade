@@ -1,7 +1,5 @@
 use uwbfqcjrjwbkmy73;
 
-SET FOREIGN_KEY_CHECKS=0; DROP TABLE users; SET FOREIGN_KEY_CHECKS=1;
-
 DROP TABLE IF EXISTS addresses;
 drop table if exists inventories;
 drop table if exists users;
@@ -14,19 +12,6 @@ state varchar(100) NOT NULL,
 zip int NOT NULL,
 created_at timestamp NOT NULL,
 updated_at timestamp NOT NULL, 
-PRIMARY KEY(id)
-);
-
-create table if not exists inventories (
-id integer auto_increment NOT NULL,
-category varchar(100) NOT NULL,
-product varchar(100) NOT NULL,
-quantity integer NOT NULL,
-price float NOT NULL,
-unit varchar(100) NOT NULL,
-created_at timestamp NOT NULL,
-updated_at timestamp NOT NULL,
-user_id int NOT NULL, 
 PRIMARY KEY(id)
 );
 
@@ -47,4 +32,17 @@ PRIMARY KEY(id),
 FOREIGN KEY (address_id) REFERENCES addresses(id)
                         ON DELETE CASCADE
                         ON UPDATE CASCADE
+);
+
+create table if not exists inventories (
+id integer auto_increment NOT NULL,
+category varchar(100) NOT NULL,
+product varchar(100) NOT NULL,
+quantity integer NOT NULL,
+price float NOT NULL,
+unit varchar(100) NOT NULL,
+created_at timestamp NOT NULL,
+updated_at timestamp NOT NULL,
+user_id int NOT NULL, 
+PRIMARY KEY(id)
 );
