@@ -58,7 +58,7 @@ require('./app/config/passport/passport.js')(passport, models.user);
 var PORT = process.env.PORT || 5000;
 
 models.sequelize.sync({
-    force: true
+    force: false
 }).then(function () {
     app.listen(PORT, function (err) {
 
