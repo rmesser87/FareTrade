@@ -1,5 +1,11 @@
 use uwbfqcjrjwbkmy73;
 
+SET FOREIGN_KEY_CHECKS=0; DROP TABLE users; SET FOREIGN_KEY_CHECKS=1;
+
+DROP TABLE IF EXISTS addresses;
+drop table if exists inventories;
+drop table if exists users;
+
 create table if not exists addresses (
 id integer auto_increment NOT NULL,
 street varchar(100) NOT NULL,
@@ -36,6 +42,9 @@ last_login timestamp,
 status varchar(100) NOT NULL,
 created_at timestamp NOT NULL,
 updated_at timestamp Null,
-address_id int NOT NULL,
-PRIMARY KEY(id)
+address_id int,
+PRIMARY KEY(id), 
+FOREIGN KEY (address_id) REFERENCES addresses(id)
+                        ON DELETE CASCADE
+                        ON UPDATE CASCADE
 );
