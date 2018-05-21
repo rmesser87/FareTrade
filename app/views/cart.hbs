@@ -1,121 +1,107 @@
 {{> nav/navbar}}
 
-<form class="needs-validation" novalidate>
-  <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom02">Last name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationCustomUsername">Username</label>
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroupPrepend">@</span>
+<h1>Shopping Cart</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-3">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="../assets/images/apple.jpg" alt="Card image cap" height="250px">
+                <div class="card-body">
+                    <p class="card-text">
+                        <div class="product-details">
+                            <div class="type">Seller:</div>
+                            <div class="seller">Johnny Appleseed's Farms</div>
+                            <br />
+                            <div class="type">Product:</div>
+                            <div class="product-name">Red Gala Apple</div>
+                            <br />
+                            <div class="type">Description:</div>
+                            <p class="product-description">Have you ever heard of Johnny? He's the best farmer with the best apples! Our Best Apple, Red
+                                Gala
+                            </p>
+                        </div>
+                        <div class="type">Price:</div>
+                        <div class="product-price">1.50</div>
+                        <br />
+                        <div class="type">Quantity:</div>
+                        <div class="product-quantity">
+                            <input type="number" value="2" min="1">
+                        </div>
+                        <div class="product-removal">
+                            <button class="remove-product">
+                                Remove
+                            </button>
+                        </div>
+                        <div class="type">Updated Price:</div>
+                        <div class="product-line-price">3.00</div>
+                    </p>
+                </div>
+            </div>
         </div>
-        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
-        <div class="invalid-feedback">
-          Please choose a username.
+        <div class="col-md-2"></div>
+        <div class="col-md-3">
+            <div class="card" style="width: 20rem;">
+                <img class="card-img-top" src="../assets/images/corn.jpg" alt="Card image cap" height="250px">
+                <div class="card-body">
+                    <p class="card-text">
+                        <div class="product-details">
+                            <div class="type">Seller:</div>
+                            <div class="seller">Golden Gate Corn</div>
+                            <br />
+                            <div class="type">Product:</div>
+                            <div class="product-name">Gold Corn</div>
+                            <br />
+                            <div class="type">Description:</div>
+                            <p class="product-description">Who hasnt eaten corn? Best Corn in North Texas, come get your Gold Corn for the best price.</p>
+                        </div>
+                        <div class="type">Price:</div>
+                        <div class="product-price">1.50</div>
+                        <br />
+                        <div class="type">Quantity:</div>
+                        <div class="product-quantity">
+                            <input type="number" value="2" min="1">
+                        </div>
+                        <div class="product-removal">
+                            <button class="remove-product">
+                                Remove
+                            </button>
+                        </div>
+                        <div class="type">Updated Price:</div>
+                        <div class="product-line-price">3.00</div>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="validationCustom03">City</label>
-      <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-      <div class="invalid-feedback">
-        Please provide a valid city.
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationCustom04">State</label>
-      <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-      <div class="invalid-feedback">
-        Please provide a valid state.
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <label for="validationCustom05">Zip</label>
-      <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-      <div class="invalid-feedback">
-        Please provide a valid zip.
-      </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-      <label class="form-check-label" for="invalidCheck">
-        Agree to terms and conditions
-      </label>
-      <div class="invalid-feedback">
-        You must agree before submitting.
-      </div>
-    </div>
-  </div>
-  <button class="btn btn-primary" type="submit">Submit form</button>
-</form>
-
-<script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>
-
-
-
-
-{{!-- ********************************** --}}
-<form>
-  <div class="form-row align-items-center">
-    <div class="col-auto">
-      <label class="sr-only" for="inlineFormInput">Name</label>
-      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
-    </div>
-    <div class="col-auto">
-      <label class="sr-only" for="inlineFormInputGroup">Username</label>
-      <div class="input-group mb-2">
-        <div class="input-group-prepend">
-          <div class="input-group-text">@</div>
+    <br />
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Total Costs</h3>
+                    <center>
+                    <div class="totals-item">
+                        <label>Tax (5%):</label>
+                        <div class="totals-value" id="cart-tax">$0.28</div>
+                    </div>
+                    <br />
+                    <div class="totals-item">
+                        <label>Shipping</label>
+                        <div class="totals-value" id="cart-shipping">$2.00</div>
+                    </div>
+                    <br />
+                    <div class="totals-item totals-item-total">
+                        <label>Grand Total</label>
+                        <div class="totals-value" id="cart-total">$7.78</div>
+                    </div>
+                    <br />
+                    <button class="checkout" style="text-align:right">Checkout</button>
+                    </center>
+                </div>
+            </div>
         </div>
-        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-      </div>
+
     </div>
-    <div class="col-auto">
-      <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-        <label class="form-check-label" for="autoSizingCheck">
-          Remember me
-        </label>
-      </div>
-    </div>
-    <div class="col-auto">
-      <button type="submit" class="btn btn-primary mb-2">Submit</button>
-    </div>
-  </div>
-</form>
+</div>
