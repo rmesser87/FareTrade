@@ -1,15 +1,42 @@
 {{> nav/navbar}}
-{{!-- <h5>Hurray! you are logged in.</h5>
-
-<h1>DashBoard</h1>
+<div class="jumbotron jumbotron-fluid" id="dashboard">
+  <div class="container">
+    <h1 class="display-4">Dashboard</h1>
+    <p class="lead">Welcome, {{user.firstname}} to 
+      <img src="assets/images/FTLogoSM.png" id="logo4" alt="FareTrade expanded Logo">
+    </p>
+  </div>
+</div>
 <br>
-
-
-
-<h3>Inventory</h3>
-<br>
-<div id="inventory"></div> --}}
+<div class="container-fluid">
 
   {{#if user}}
-    {{user}}
+    {{user.firstname}}
   {{/if}}
+<div class="row">
+  <div class="col-sm">
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Quantity</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+    </select>
+  </div>
+</form>
+
+<form id="logout" name="logout" method="GET" action="logout"></form>
+  <input class="btn" type="logout" value="Log Out" />
+</form>
+
+  <br>
+  <br>
+  <br>
+  <br> {{>disclaimer/disclaimer}}
+</div>
+{{>footer/foot}}
+

@@ -53,4 +53,29 @@
   </div>
 </div>
 
+{{> nav/navbar}}
+<div class="jumbotron jumbotron-fluid" id="dashboard">
+  <div class="container">
+    <h1 class="display-4">  {{#if user}}
+    Welcome, {{user.firstname}} to FareTrade
+  {{/if}}
+    </h1>
+  </div>
+</div>
+<br>
+<div class="container-fluid"></div>
+
+  {{#if user}}
+    {{user.firstname}}
+  {{/if}}
+
+
+
+  <br>
+  <br>
+  <br>
+  <br> {{>disclaimer/disclaimer}}
+</div>
+{{>footer/foot}}
+
 
