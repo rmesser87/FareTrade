@@ -1,11 +1,24 @@
  {{> nav/navbar}}
-<form id="signin" name="signin" method="post" action="signin">
-  <label for="email">Email Address</label>
-  <input class="text" name="email" type="text" />
-  <label for="password">Password</label>
-  <input name="password" type="password" />
-  <input class="btn" type="submit" value="Sign In" />
-</form>
+<div class="jumbotron jumbotron-fluid" id="signinjumbo">
+  <div class="container">
+    <h1 class="display-4">Sign In</h1>
+    <br>
+    <br>
+    <div class="col-sm">
+    <form id="signin" name="signin" method="post" action="signin">
+      <label for="email" id="signinemail">Email Address</label>
+      <input class="text" name="email" type="text" />
+      <label for="password" id="signinpass">Password</label>
+      <input name="password" type="password" />
+      <input class="btn" id="signinbtn"type="submit" value="Sign In" />
+    </form>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container-fluid">
 <br>
 <br>
 <br> {{>disclaimer/disclaimer}}
+</div>
+{{>footer/foot}}
