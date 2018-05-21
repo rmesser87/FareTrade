@@ -246,10 +246,8 @@ h3 {
 
 /* ************************************************************* */
 /*Carousel*/
-.carosel-inner {
-    
-}
-.carousel-item {
+
+/* .carousel-item {
     width: 100%;
     height: 300px;
 }
@@ -260,10 +258,10 @@ h3 {
 }
 
 .featurette-heading {
-    color: #B35C42;   
+    color: #B35C42;
 }
 .lead2 {
-    color: #B35C42;   
+    color: #B35C42;
 }
 .row.featurette1 {
     background-color: #63C05A;
@@ -273,4 +271,4 @@ h3 {
 }
 .row.featurette3 {
     background-color: #A1B35D;
-}
+} */
