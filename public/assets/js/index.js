@@ -9,9 +9,9 @@ $(document).ready(function () {
     //     event.preventDefault();
     //     location.href = ('/signin');
     // });
-    $("#signup").on("click", function (event) {
-        event.preventDefault();
-    });
+    // $("#signup").on("click", function (event) {
+    //     event.preventDefault();
+    // });
     $("#signinform").on("click", function (event) {
         event.preventDefault();
     });
