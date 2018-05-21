@@ -1,30 +1,39 @@
 {{> nav/navbar}}
 <div class="jumbotron jumbotron-fluid" id="signupjumbo">
-  <div class="container">
-    <h1 class="display-4">Sign Up</h1>
-    <br>
-    <br>
-  <div class="row">
-    <div class="col-auto">
-<form id="signupform" name="signup" method="post" action="/signup">
-    <label for="email" id="signupemail">Email Address</label>
-    <input class="text" name="email" type="email" />
-    <label for="firstname" id="signupfirst">Firstname</label>
-    <input name="firstname" type="text" />
-    <label for="lastname" id="signuplast">Lastname</label>
-    <input name="lastname" type="text" />
-    <label for="password" id="signuppass">Password</label>
-    <input name="password" type="password" />
-    <input class="btn" id="signupbtn" type="submit" value="Sign Up" />
-</form>
+    <div class="container">
+        <h1 class="display-4">Sign Up</h1>
+        <br>
+        <br>
+        <form id="signupform" name="signup" method="post" action="/signup">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstname" id="signupfirst">First Name</label>
+                    <input name="firstname" type="text" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname" id="signuplast">Last Name</label>
+                    <input name="lastname" type="text" />
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="email" id="signupemail"> Email </label>
+                    <input class="text" name="email" type="email" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password" id="signuppass">Password</label>
+                    <input name="password" type="password" />
+                </div>
+            </div>
+            <div class="form-group">
+                <input class="btn" id="signupbtn" type="submit" value="Sign Up" />
+            </div>
+        </form>
     </div>
-  </div>
 </div>
 </div>
 <br>
 <div class="container-fluid">
-<br>
-<br>
-<br> {{>disclaimer/disclaimer}}
+    <br> {{>disclaimer/disclaimer}}
 </div>
 {{>footer/foot}}
