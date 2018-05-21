@@ -171,7 +171,7 @@ a:hover {
     height: 20px;
 }
 #signupform {
-    text-align: left;
+    text-align: center;
 }
 #signupemail, #signupfirst, #signuplast, #signuppass {
     color: #B35C42;
@@ -194,8 +194,17 @@ a:hover {
     height: 80px;
     width: 240px;
 }
+<<<<<<< Updated upstream
 
 /*
 ************************************************************* */
 /*Shopping Cart*/
+=======
+.buysell {
+    background-color: #A1B35D;
+}
+#buyform {
+    margin: 15px;
+}
+>>>>>>> Stashed changes
 
