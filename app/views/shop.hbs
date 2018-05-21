@@ -1,1 +1,56 @@
+
+{{!-- Just a placeholder for signup form while I figure out what's going on --}}
 {{> nav/navbar}}
+    <div class="container">
+        <h1 class="display-4">Sign Up</h1>
+        <br>
+        <br>
+        <div class="container2">
+            <form id="signupform" name="signup" method="post" action="/signup">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+                <br>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <br>
+                <div class="form-row">
+                    <div class="col">
+                        <input class="signupbtn" type="submit" value="Sign Up" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{!-- Just a placeholder for signin form while I figure out what's going on --}}
+
+ {{> nav/navbar}}
+<div class="jumbotron jumbotron-fluid" id="signin">
+  <div class="container">
+    <h1 class="display-4">Sign In</h1>
+    <br>
+    <br>
+    <form id="signinform" name="signin" method="post" action="signin">
+      <label for="email">Email Address</label>
+      <input class="text" name="email" type="text" />
+      <label for="password">Password</label>
+      <input name="password" type="password" />
+      <input class="signinbtn" type="submit" value="Sign In" />
+    </form>
+  </div>
+</div>
+
+

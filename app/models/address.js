@@ -2,19 +2,19 @@ module.exports = function (sequelize, DataTypes) {
     var Address = sequelize.define("Address", {
         street: {
             type: DataTypes.STRING,
-            allowNull: true
+            allowNull: false
         },
         city: {
             type: DataTypes.STRING,
-            allowNull: true
+            allowNull: false
         },
         state: {
             type: DataTypes.STRING,
-            allowNull: true
+            allowNull: false
         },
         zip: {
             type: DataTypes.INTEGER,
-            allowNull: true
+            allowNull: false
         }
     }, {
         underscored: true

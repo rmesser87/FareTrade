@@ -1,19 +1,168 @@
-div.jumbotron.jumbotron-fluid{
-    background-image: url('/assets/images/stock1.jpg')
+body {
+    font-family: 'Merienda', cursive;
+    background-color: #ffffff;
+    color: #080808;
 }
-#test{
-    color: red;
-    background-color: blue;
+h1 {
+    font-family: 'Kaushan Script', cursive;
+    color: #B35C42;
+}
+/* ************************************************************* */
+/* NavBar */
+.navbar-brand {
+    background-image: url('assets/images/FTLogo-4.png');
+}
+#navbarNavAltMarkup {
+    background-color: #49672b;
+    color: #ffffff;
+}
+.navbar-toggler-icon {
+    color: #ffffff !important;
+}
+.navbar-toggler {
+    color: blue !important;
+}
+.collapse.navbar-collapse {
+    color: purple !important;
+}
+.nav-item.nav-link.active {
+    color: #B35C42 !important;
+}
+.nav-item.nav-link {
+    color: #ffffff !important;
+}
+a {
+    color: #ACF366 !important;
+}
+a:hover {
+    color: #ACF366 !important;
+}
+.navbar-toggler {
+    color: pink !important;
+}
+.navbar .navbar-expand-lg .navbar-light .bg-light {
+    color: #49672b !important;
+    background-color: #49672b !important;
+}
+.bg-light {
+    background-color: #49672b !important;
+}
+#logo {
+    height: 40px;
+    width: 40px;
 }
 
+/* ************************************************************* */
+/*Footer*/
+.footer {
+    background-color: #88B35D;
+    text-align: center;
+    font-size: 12px;
+}
+#logo2 {
+    height: 40px;
+    width: 120px;
+}
+
+/* ************************************************************* */
+/*HomePage*/
+#home {
+    text-align: center;
+    background-image: url('/assets/images/stock1.jpg');
+    background-size: cover;
+}
 .display-4 {
-    color: yellow;
+    font-size: 100px;
 }
 
 .lead {
-    color: yellow;
+    font-size: 60px;
+    color: #B35C42;
+}
+.card-body {
+    background-color: #49672b !important;
+    color: #B35C42;
+}
+#disclaimer {
+    font-size: 8px;
+    color: black;
+    text-align: left;
+    margin-bottom: 2px;
+}
+/* ************************************************************* */
+/*AboutUs*/
+#aboutus {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-216368.jpeg');
+    background-size: cover;
 }
 
-.navbar-brand {
-    background-image: url('assets/images/FTLogo-4.png');
+.indent {
+    text-indent: 22px;
+}
+/* ************************************************************* */
+/*History*/
+#history {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-606540.jpeg');
+    background-size: cover;
+}
+
+#logo3 {
+    height: 20px;
+    width: 60px;
+}
+
+/* ************************************************************* */
+/*Resources*/
+#resources {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-216368.jpeg');
+    background-size: cover;
+}
+
+/* ************************************************************* */
+/*Recipes*/
+#recipes {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-326281.jpeg');
+    background-size: cover;
+}
+
+/* ************************************************************* */
+/*ContactUs*/
+#contactus {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-326278.jpeg');
+    background-size: cover;
+}
+
+/* ************************************************************* */
+/*SignIn*/
+#signin {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-1070987.jpeg');
+    background-size: cover;
+}
+#signinform {
+    text-align: center;
+}
+.signinbtn {
+    color: #FFFB00;
+    background-color: #18BD25;
+}
+
+/* ************************************************************* */
+/*SignUp*/
+#signup {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-192312.jpeg');
+    background-size: cover;
+}
+.signupbtn {
+    color: #FFFB00;
+    background-color: #18BD25;
+}
+#signupform {
+    text-align: center;
 }

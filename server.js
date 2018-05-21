@@ -54,10 +54,13 @@ require('./app/config/passport/passport.js')(passport, models.user);
 
 //true means that it will drop our database each time this code is run
 //make false before deployment
+
+var PORT = process.env.PORT || 5000;
+
 models.sequelize.sync({
-    force: true
+    force: false
 }).then(function () {
-    app.listen(5000, function (err) {
+    app.listen(PORT, function (err) {
 
         if (!err)
 
