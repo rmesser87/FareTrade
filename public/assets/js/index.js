@@ -18,7 +18,4 @@ $(document).ready(function () {
     $("#signupform").on("click", function (event) {
         event.preventDefault();
     });
-    $("#logout").on("click", function (event) {
-        event.preventDefault();
-    });
 });
