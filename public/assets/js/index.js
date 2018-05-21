@@ -11,16 +11,14 @@ $(document).ready(function () {
     // });
     $("#signup").on("click", function (event) {
         event.preventDefault();
-<<<<<<< HEAD
-        location.href = ('./signup');
-=======
->>>>>>> 83caf88b7e1c31f23d846c06948db33b807267ba
     });
     $("#signinform").on("click", function (event) {
         event.preventDefault();
     });
-
     $("#signupform").on("click", function (event) {
+        event.preventDefault();
+    });
+    $("#logout").on("click", function (event) {
         event.preventDefault();
     });
 });
