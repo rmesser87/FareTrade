@@ -9,7 +9,7 @@ $(document).ready(function () {
     //     event.preventDefault();
     //     location.href = ('/signin');
     // });
-    $("#signupform").on("click", function (event) {
+    $("#signup").on("click", function (event) {
         event.preventDefault();
     });
     $("#signinform").on("click", function (event) {
