@@ -24,3 +24,7 @@ exports.logout = function(req, res) {
     res.redirect('/');
  
 };
+exports.cart = function(req, res) {
+    res.render('cart');
+ 
+};

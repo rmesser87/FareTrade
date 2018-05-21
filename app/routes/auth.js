@@ -25,7 +25,8 @@ module.exports = function(app, passport) {
  
     app.get('/logout', authController.logout);
  
- 
+    app.get('/cart', authController.cart);
+
     app.post('/signin', passport.authenticate('local-signin', {
             successRedirect: '/dashboard',
  
