@@ -56,4 +56,8 @@ module.exports = function (app) {
     
     res.render('signup');
   });
+  app.get("/logout", function (req, res) {
+    
+    res.render('signup');
+  });
 };
