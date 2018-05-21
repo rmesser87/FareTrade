@@ -2,41 +2,97 @@
 <div class="jumbotron jumbotron-fluid" id="dashboard">
   <div class="container">
     <h1 class="display-4">Dashboard</h1>
-    <p class="lead">Welcome, {{user.firstname}} to 
+    <p class="lead">Welcome, {{user.firstname}} to
       <img src="assets/images/FTLogoSM.png" id="logo4" alt="FareTrade expanded Logo">
     </p>
   </div>
 </div>
 <br>
 <div class="container-fluid">
-
-  {{#if user}}
-    {{user.firstname}}
-  {{/if}}
-<div class="row">
-  <div class="col-sm">
-<form>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Quantity</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      <option>6</option>
-    </select>
+  <form id="cart" name="cart" method="GET" action="">
+  <input class="btn" id="cart" type="logout" value="cart">
+  </form> 
+<div class="fa-3x">
+  <i class="fas fa-shopping-cart"></i>
   </div>
-</form>
+  {{#if user}} {{user.firstname}} {{/if}}
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <form>
+        <legend>Buy</legend>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Category</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>Canned Good</option>
+            <option>Fruit</option>
+            <option>Vegetable</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Product Name</label>
+          <input type="test" class="form-control" id="exampleFormControlInput1" placeholder="Tomato">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Quantity</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>25</option>
+            <option>50</option>
+            <option>100</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Quantity 2</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="input-group-text">$</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="2.99">
+    </div>
+  </div>
+  </form>
+</div>
+</div>
+
 
 <form id="logout" name="logout" method="GET" action="logout"></form>
-  <input class="btn" type="logout" value="Log Out" />
+<input class="btn" type="logout" value="Log Out" />
 </form>
 
-  <br>
-  <br>
-  <br>
-  <br> {{>disclaimer/disclaimer}}
+<br>
+<br>
+<br>
+<br> {{>disclaimer/disclaimer}}
 </div>
 {{>footer/foot}}
-

@@ -139,32 +139,48 @@ a:hover {
 
 /* ************************************************************* */
 /*SignIn*/
-#signin {
+#signinjumbo {
     text-align: center;
-    background-image: url('/assets/images/pexels-photo-1070987.jpeg');
+    background-image: url('/assets/images/pexels-photo-192312.jpeg');
     background-size: cover;
 }
 #signinform {
     text-align: center;
 }
-.signinbtn {
-    color: #FFFB00;
-    background-color: #18BD25;
+#signinemail, #signinpass {
+    color: #B35C42;
 }
+#signinbtn {
+    color: #ffffff;
+    background-color: #49672b;
+    margin-bottom: 2px;
+    padding: 4px;
+}
+
 
 /* ************************************************************* */
 /*SignUp*/
-#signup {
+#signupjumbo {
     text-align: center;
     background-image: url('/assets/images/pexels-photo-192312.jpeg');
     background-size: cover;
 }
 .signupbtn {
-    color: #FFFB00;
-    background-color: #18BD25;
+    color: #ffffff;
+    background-color: #49672b;
+    height: 20px;
 }
 #signupform {
-    text-align: center;
+    text-align: left;
+}
+#signupemail, #signupfirst, #signuplast, #signuppass {
+    color: #B35C42;
+}
+#signupbtn {
+    color: #ffffff;
+    background-color: #49672b;
+    margin-bottom: 2px;
+    padding: 4px;
 }
 
 /* ************************************************************* */
