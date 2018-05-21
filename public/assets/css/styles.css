@@ -1,3 +1,5 @@
+/* ************************************************************* */
+/* Body */
 body {
     font-family: 'Merienda', cursive;
     background-color: #ffffff;
@@ -16,30 +18,19 @@ h1 {
     background-color: #49672b;
     color: #ffffff;
 }
-.navbar-toggler-icon {
-    color: #ffffff !important;
-}
-.navbar-toggler {
-    color: blue !important;
-}
-.collapse.navbar-collapse {
-    color: purple !important;
-}
 .nav-item.nav-link.active {
-    color: #B35C42 !important;
-}
-.nav-item.nav-link {
     color: #ffffff !important;
+}
+.nav-item.nav-link.active:hover {
+    color: #E6963E !important;
 }
 a {
-    color: #ACF366 !important;
+    color: #B35C42;
 }
 a:hover {
-    color: #ACF366 !important;
+    color: #E6963E !important;
 }
-.navbar-toggler {
-    color: pink !important;
-}
+
 .navbar .navbar-expand-lg .navbar-light .bg-light {
     color: #49672b !important;
     background-color: #49672b !important;
@@ -58,6 +49,7 @@ a:hover {
     background-color: #88B35D;
     text-align: center;
     font-size: 12px;
+    padding: 10px;
 }
 #logo2 {
     height: 40px;
@@ -89,6 +81,12 @@ a:hover {
     text-align: left;
     margin-bottom: 2px;
 }
+#first-slide {
+    max-width: 100%;
+}
+.carousel-item {
+    max-width: 100%;
+}
 /* ************************************************************* */
 /*AboutUs*/
 #aboutus {
@@ -112,6 +110,10 @@ a:hover {
     height: 20px;
     width: 60px;
 }
+#logo5 {
+    height: 50px;
+    width: 150px;
+}
 
 /* ************************************************************* */
 /*Resources*/
@@ -119,6 +121,9 @@ a:hover {
     text-align: center;
     background-image: url('/assets/images/pexels-photo-216368.jpeg');
     background-size: cover;
+}
+h3 {
+    color: #B35C42;  
 }
 
 /* ************************************************************* */
@@ -194,17 +199,76 @@ a:hover {
     height: 80px;
     width: 240px;
 }
-<<<<<<< Updated upstream
+.shoppingcart {
+    justify-content: flex-end
+}
+.fa-shopping cart, #cart {
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ffffff;
+    max-width: 200px;
+    max-height: 70px;
+    align-content: right;
+}
+#cartbtn {
+    color: #ffffff;
+    background-color: #49672b;
 
-/*
-************************************************************* */
-/*Shopping Cart*/
-=======
+}
 .buysell {
     background-color: #A1B35D;
 }
-#buyform {
+#buyform, #sellform {
     margin: 15px;
+    padding: 15px;
+    color: #ffffff;
+    background-color: #A1B35D;
 }
->>>>>>> Stashed changes
+#buybtn, #sellbtn {
+    color: #ffffff;
+    background-color: #49672b;
+}
 
+/* ************************************************************* */
+/*Shopping Cart*/
+#cartjumbo {
+    text-align: center;
+    background-image: url('/assets/images/pexels-photo-1070987.jpeg');
+    background-size: cover;
+}
+.card-img-top {
+    max-height: 250px;
+}
+.card-body {
+    color: #ffffff;
+    background-color: #A1B35D;
+}
+
+/* ************************************************************* */
+/*Carousel*/
+
+/* .carousel-item {
+    width: 100%;
+    height: 300px;
+}
+.carosel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featurette-heading {
+    color: #B35C42;
+}
+.lead2 {
+    color: #B35C42;
+}
+.row.featurette1 {
+    background-color: #63C05A;
+}
+.row.featurette2 {
+    background-color: #8ECA5F;
+}
+.row.featurette3 {
+    background-color: #A1B35D;
+} */

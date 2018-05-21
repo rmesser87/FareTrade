@@ -18,4 +18,16 @@ $(document).ready(function () {
     $("#signupform").on("click", function (event) {
         event.preventDefault();
     });
+    // $.get('cart'), function(resCart) {
+    //     res.render.resCart;
+    // }
+
+    $(document).on("click", "#sellform", handleSellForm);
+
+    function handleSellForm (event) {
+        event.preventDefault();
+    }
+
+
+
 });

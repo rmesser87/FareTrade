@@ -1,12 +1,16 @@
 {{> nav/navbar}}
-
-<h1>Shopping Cart</h1>
-<div class="container">
+<div class="jumbotron jumbotron-fluid" id="cartjumbo">
+    <div class="container">
+        <h1 class="display-4">Shopping Cart</h1>
+    </div>
+</div>
+<br>
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-3">
             <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="../assets/images/apple.jpg" alt="Card image cap" height="250px">
+                <img class="card-img-top" src="../assets/images/apple.jpg" alt="Red Gala Apple">
                 <div class="card-body">
                     <p class="card-text">
                         <div class="product-details">
@@ -82,22 +86,22 @@
                 <div class="card-body">
                     <h3>Total Costs</h3>
                     <center>
-                    <div class="totals-item">
-                        <label>Tax (5%):</label>
-                        <div class="totals-value" id="cart-tax">$0.28</div>
-                    </div>
-                    <br />
-                    <div class="totals-item">
-                        <label>Shipping</label>
-                        <div class="totals-value" id="cart-shipping">$2.00</div>
-                    </div>
-                    <br />
-                    <div class="totals-item totals-item-total">
-                        <label>Grand Total</label>
-                        <div class="totals-value" id="cart-total">$7.78</div>
-                    </div>
-                    <br />
-                    <button class="checkout" style="text-align:right">Checkout</button>
+                        <div class="totals-item">
+                            <label>Tax (5%):</label>
+                            <div class="totals-value" id="cart-tax">$0.28</div>
+                        </div>
+                        <br />
+                        <div class="totals-item">
+                            <label>Shipping</label>
+                            <div class="totals-value" id="cart-shipping">$2.00</div>
+                        </div>
+                        <br />
+                        <div class="totals-item totals-item-total">
+                            <label>Grand Total</label>
+                            <div class="totals-value" id="cart-total">$7.78</div>
+                        </div>
+                        <br />
+                        <button class="checkout" style="text-align:right">Checkout</button>
                     </center>
                 </div>
             </div>
@@ -105,3 +109,9 @@
 
     </div>
 </div>
+<br>
+<br>
+<br>
+<br> {{>disclaimer/disclaimer}}
+</div>
+{{>footer/foot}}
